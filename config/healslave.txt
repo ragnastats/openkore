@@ -1,0 +1,179 @@
+useSelf_skill_smartHeal 1
+
+useSelf_skill Heal {
+    lvl 10
+    hp < 80%
+    manualAI 2
+    sp > 40
+}
+
+useSelf_skill Blessing {
+    lvl 10
+    whenStatusInactive Blessing
+    notWhileSitting 1
+    notInTown 1
+    timeout 30
+    manualAI 2
+}
+
+useSelf_skill Blessing {
+    lvl 10
+    whenStatusActive Curse
+    notWhileSitting 1
+    notInTown 1
+    timeout 3
+    manualAI 2
+}
+
+useSelf_skill Increase AGI {
+    lvl 10
+    whenStatusInactive Increase AGI
+    timeout 30
+    notWhileSitting 1
+    notInTown 0
+    manualAI 2
+}
+
+useSelf_skill Kyrie Eleison {
+    lvl 10
+    whenStatusInactive Kyrie Eleison
+    timeout 30
+    notWhileSitting 1
+    notInTown 1
+    manualAI 2
+    disabled 0
+}
+
+useSelf_skill Impositio Manus {
+    lvl 10
+    whenStatusInactive Impositio Manus
+    timeout 30
+    notWhileSitting 1
+    notInTown 1
+    disabled 1
+    manualAI 2
+}
+
+useSelf_skill Magnificat {
+    lvl 10
+    whenStatusInactive Magnificat
+    timeout 90
+    notWhileSitting 1
+    notInTown 1
+    disabled 0
+    manualAI 2
+    partyAggressives < 2
+}
+
+useSelf_skill Gloria {
+    lvl 10
+    whenStatusInactive Gloria
+    timeout 30
+    notWhileSitting 1
+    notInTown 1
+    disabled 0
+    manualAI 2
+}
+
+partySkill Heal {
+    lvl 10
+    sp > 10%
+    target_hp < 80%
+    manualAI 2
+}
+
+partySkill Resurrection {
+    lvl 4
+    target_dead 1
+    timeout 5
+    manualAI 2
+    partyAggressives < 2
+}
+
+partySkill Blessing {
+    lvl 10
+    sp > 10%
+    notWhileSitting 1
+    notInTown 1
+    target_whenStatusInactive Blessing
+    target_timeout 210
+    manualAI 2
+}
+
+partySkill Cure {
+    notWhileSitting 1
+    target_whenStatusActive Silence
+    timeout 1
+}
+
+partySkill Blessing {
+    lvl 10
+    sp > 10%
+    notWhileSitting 1
+    notInTown 1
+    target_whenStatusActive Curse
+    target_timeout 3
+    manualAI 2
+}
+
+partySkill Increase AGI {
+    lvl 10
+    sp > 10%
+    target_whenStatusInactive Increase AGI
+    target_timeout 210
+    notInTown 0
+    notWhileSitting 1
+    manualAI 2
+}
+
+
+partySkill Impositio Manus {
+    lvl 10
+    sp > 10%
+    target_whenStatusInactive Impositio Manus
+    target_timeout 60
+    notInTown 1
+    notWhileSitting 1
+    manualAI 2
+    partyAggressives < 2
+}
+
+partySkill Kyrie Eleison {
+    lvl 10
+    sp > 10%
+    target_whenStatusInactive Kyrie Eleison, Assumptio
+    target_isNotJob High Priest,Arch Bishop
+    target_timeout 15
+    notInTown 1
+    notWhileSitting 1
+    manualAI 2
+    disabled 1
+}
+
+partySkill Magnificat {
+    lvl 10
+    sp > 10%
+    target_whenStatusInactive Magnificat
+    target_dist < 5
+    target_aggressives 0
+    timeout 30
+    notInTown 1
+    notWhileSitting 1
+    disabled 1
+    manualAI 2
+}
+
+
+partySkill Gloria {
+    lvl 10
+    sp > 10%
+    target_whenStatusInactive Gloria
+    target_dist < 5
+    target_aggressives 0
+    timeout 30
+    notInTown 1
+    notWhileSitting 1
+    disabled 1
+    manualAI 2
+}
+
