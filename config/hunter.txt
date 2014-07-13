@@ -1,0 +1,72 @@
+attackSkillSlot Double Strafe {
+	lvl 10
+	dist 15
+	maxCastTime 0
+	minCastTime 0
+	hp
+	sp > 100
+	homunculus_hp
+	homunculus_sp
+	homunculus_dead
+	onAction
+	whenStatusActive
+	whenStatusInactive
+	whenFollowing
+	spirit
+	aggressives
+	previousDamage
+	stopWhenHit 0
+	inLockOnly 0
+	notInTown 0
+	timeout 0
+	disabled 0
+	monsters
+	notMonsters Mandragora, Hydra, Dustiness, Familiar
+	monstersCount
+	maxAttempts 0
+	maxUses 0
+	target_whenStatusActive
+	target_whenStatusInactive
+	#target_deltaHp > 00
+	inInventory
+	isSelfSkill 0
+	equip_topHead
+	equip_midHead
+	equip_lowHead
+	equip_leftHand
+	equip_rightHand
+	equip_leftAccessory
+	equip_rightAccessory
+	equip_robe
+	equip_armor
+	equip_shoes
+	equip_arrow
+	manualAI 0
+}
+
+# Wow this config is so good
+attackSkillSlot Double Strafe {
+	lvl 10
+	dist 15
+	maxCastTime 0
+	minCastTime 0
+	hp
+	sp > 15
+	maxUses 2
+#	target_deltaHp < -8000
+}
+
+attackSkillSlot Arrow Shower {
+	lvl 10
+	dist 15
+	sp > 50
+	aggressives > 2
+}
+
+
+attackSkillSlot Arrow Shower {
+	lvl 10
+	dist 15
+	sp > 50
+	partyAggressives > 3
+}
